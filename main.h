@@ -92,15 +92,15 @@ int rotstr13_p(va_list types, char buffer[],
 
 /* width handler */
 int char_handle(char c, char buffer[],
-		int flags, int width, int precision,, int size);
+		int flags, int width, int precision, int size);
 int digit_write(int is_positive, int ind, char buffer[],
 		int flags, int width, int precision, int size);
 int buff_num(int ind, char bff[], int flags, int width, int precision,
 		int length, char padd, char extra_c);
 int num_pointer(char buffer[], int ind, int length,
-		int width, int flags, int char padd, char extra_c, int padd_start);
+		int width, int flags, int padd, char extra_c, int padd_start);
 
-int num_unsig(int is_negative int ind,
+int num_unsig(int is_negative, int ind,
 		char buffer[],
 		int flags, int width, int precision, int size);
 
