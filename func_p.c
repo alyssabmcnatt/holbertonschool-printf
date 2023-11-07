@@ -19,13 +19,13 @@ int var_pont(va_list types, char buffer[],
 
 	unsigned long num_addrs;
 	char map_to[] = "0123456789abcdef";
-	void *addrs = vs_arg(types, void *);
+	void *addrs = va_arg(types, void *);
 
 	UNUSED(width);
 	UNUSED(size);
 
 	if (addrs == NULL)
-		return (write(1, "(nil)", 5));
+		return (write(1, "(null)", 5));
 
 	buffer(BUFF_SIZE - 1) = '\0';
 	UNUSED(precision);
