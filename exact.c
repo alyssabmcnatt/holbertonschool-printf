@@ -23,7 +23,7 @@ int exact_p(const char *format, int *i, va_list list)
 		if (digit_verify(format[val_i]))
 		{
 			precision *= 10;
-			precision += format[val_i]  '0';
+			precision += format[val_i];
 		}
 		else if (format[val_i] == '*')
 		{
